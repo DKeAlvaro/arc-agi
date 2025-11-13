@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import os
 import random
 
-def get_small_sample(challenges, solutions, n=20):
+def get_small_sample(challenges, solutions, n=10):
     common_ids = set(challenges.keys()) & set(solutions.keys())
     
     common_ids_list = list(common_ids)

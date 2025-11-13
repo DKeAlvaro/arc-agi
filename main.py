@@ -1,6 +1,6 @@
 from data import *
 from utils import get_small_sample
-from models import ProgramSynthesisModel, DummyModel
+from models import DummyModel
 from evaluate import make_predictions
 
 def main():
@@ -16,7 +16,7 @@ def main():
     small_evaluation_challenges, small_evaluation_solutions = get_small_sample(evaluation_challenges, evaluation_solutions)
 
 
-    model_bfs = ProgramSynthesisModel()
+    model_bfs = DummyModel()
     _ = make_predictions(
         small_evaluation_challenges, model_bfs, small_evaluation_solutions, verbose=True
     )
